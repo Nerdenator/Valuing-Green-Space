@@ -3,13 +3,13 @@
  */
 
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
-export default class TopNav extends React.Component {
+export class TopNav extends React.Component {
     render() {
         return (
-            <Navbar inverse collapseOnSelect>
+            <Navbar collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a href="#">Green Spaces</a>
