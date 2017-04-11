@@ -1,0 +1,36 @@
+{
+  "name": "valuing-green-space",
+  "version": "0.1.0",
+  "description": "[![Stories Ready to Work On](https://badge.waffle.io/zmon/Valuing-Green-Space.svg?label=ready&title=Cards%20Ready%20To%20Work%20On)](https://waffle.io/zmon/Valuing-Green-Space)",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nerdenator/Valuing-Green-Space.git"
+  },
+  "author": "Code for KC",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Nerdenator/Valuing-Green-Space/issues"
+  },
+  "homepage": "https://github.com/Nerdenator/Valuing-Green-Space#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
